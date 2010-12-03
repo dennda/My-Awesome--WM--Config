@@ -47,8 +47,8 @@ layouts =
 -- Define a tag table which hold all screen tags.
 tags = {
     names  = { "1:main", "2:web", "3:com",
-	       "4:mail", "5:im" },
-    layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[2] }
+	       "4:misc", "5:mail", "6:im" },
+    layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1], layouts[2] }
 }
 for s = 1, screen.count() do
     tags[s] = awful.tag(tags.names, s, tags.layout)
